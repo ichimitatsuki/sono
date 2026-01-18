@@ -652,6 +652,24 @@ section h2 .subtitle {
   opacity: 1;
 }
 
+/* SP版：英語テキストの改行最適化 */
+@media (max-width: 768px) {
+  .concept__slide-subtitle {
+    width: calc(100% - 40px) !important;
+    left: 20px !important;
+    position: relative;
+    text-align: center;
+    display: block;
+    word-break: normal;
+    overflow-wrap: normal;
+    font-size: 12px !important;
+    line-height: 1.5;
+    margin: 60px auto 0;
+    padding: 0;
+    max-width: none;
+  }
+}
+
 /* ドットナビゲーション */
 .concept__dots {
   position: absolute;
